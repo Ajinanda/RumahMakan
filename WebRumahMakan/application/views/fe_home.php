@@ -10,7 +10,7 @@
                             <div class="book-btn">
                                 <a href="#reservation" class="table-btn hvr-underline-from-center">Book my Table</a>
                             </div>
-                            <a href="#about">
+                            <a href="<?php echo base_url('welcome/about') ?>">
                                 <div class="mouse"></div>
                             </a>
                         </div>

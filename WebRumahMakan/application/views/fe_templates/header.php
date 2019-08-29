@@ -58,18 +58,18 @@
                                     <span class="icon-bar"></span>
                                 </button>
                                 <div class="logo">
-                                    <a class="navbar-brand js-scroll-trigger logo-header" href="#">
+                                    <a class="navbar-brand js-scroll-trigger logo-header" href="<?php echo base_url() ?>">
                                         <img src="<?php echo base_url('assets/images/logo.png'); ?>" alt="">
                                     </a>
                                 </div>
                             </div>
                             <div id="navbar" class="navbar-collapse collapse">
                                 <ul class="nav navbar-nav navbar-right">
-                                    <li <?php if ($page == "1"): ?>class="active" <?php endif ?>><a href="<?php echo base_url('home') ?>">Home</a></li>
-                                    <li <?php if ($page == "2"): ?>class="active" <?php endif ?>><a href="<?php echo base_url('home/about') ?>">About us</a></li>
+                                    <li <?php if ($page == "1"): ?>class="active" <?php endif ?>><a href="<?php echo base_url() ?>">Home</a></li>
+                                    <li <?php if ($page == "2"): ?>class="active" <?php endif ?>><a href="<?php echo base_url('welcome/about') ?>">About us</a></li>
                                     <li <?php if ($page == "3"): ?>class="active" <?php endif ?>><a href="<?php echo base_url('menu') ?>">Menu</a></li>
                                     <li><a href="#blog">Blog</a></li>
-                                    <li><a href="#reservation">Reservaion</a></li>
+                                    <li <?php if ($page == "5"): ?>class="active" <?php endif ?>><a href="<?php echo base_url('reservation') ?>">Reservation</a></li>
                                     <li><a href="#footer">Contact us</a></li>
                                 </ul>
                             </div>
